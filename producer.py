@@ -27,7 +27,7 @@ for e in range(10):
     id_num = random.randint(1000,9999)
     price = random.randint(10,20)
     date_time = str(datetime.now())
-    data = {'ID' : id_num, 'price' : price, 'timestamp' : date_time}
+    data = {'ID' : id_num, 'stock' : 'Aiven', 'price' : price, 'date_time' : date_time}
     producer.send(TOPIC_NAME,  value=data)
     time.sleep(1)
 
