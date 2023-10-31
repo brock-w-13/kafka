@@ -17,12 +17,6 @@ producer = KafkaProducer(
     	dumps(x).encode('utf-8')
 )
 
-#for i in range(100):
- #   message = f"Hello from Python using SSL {i + 1}!"
-  #  producer.send(TOPIC_NAME, message.encode('utf-8'))
-  #  print(f"Message sent: {message}")
-  #  time.sleep(1)
-
 for e in range(10):
     id_num = random.randint(1000,9999)
     price = random.randint(10,20)
